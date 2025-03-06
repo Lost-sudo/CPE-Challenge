@@ -17,7 +17,7 @@ public class Fibonacci {
 
     public static int fib(int n) {
         HashMap<Integer, Integer> memo = new HashMap<>();
-        return fibMethod(n, new HashMap<>());
+        return fibMethod(n, memo);
     }
 
     public static int fibMethod(int n, HashMap<Integer, Integer> memo) {
